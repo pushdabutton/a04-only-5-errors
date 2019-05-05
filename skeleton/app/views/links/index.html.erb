@@ -1,0 +1,7 @@
+<h2>New Link</h2>
+
+<% @links.each do |link| %>
+
+  <a href="<%=link_url(link) %>"><%= link.title %></a> : <%= link.url %>
+
+<% end %>
